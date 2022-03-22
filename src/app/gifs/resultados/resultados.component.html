@@ -1,0 +1,15 @@
+<!--<ol>
+    <li *ngFor="let gif of resultado">{{gif.title}}</li>
+</ol>-->
+<div class="row">
+    <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn" *ngFor="let gif of resultado">
+        <div class="card">
+            <div class="card-body">
+                <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top">
+                <p class="card-text">
+                    {{gif.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
